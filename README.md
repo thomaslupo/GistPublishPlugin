@@ -1,6 +1,8 @@
 # GistPublishPlugin
 
-A [Publish](https://github.com/johnsundell/publish) plugin which permits to embed Gist in your posts
+A [Publish](https://github.com/johnsundell/publish) plugin which permits to embed Gist in your posts. 
+
+Why ? 👉 It's possible to copy/paste the gist code directly in your Publish website in one of your post / page but if you want to centralize your snippet / examples of code in [Gist](https://gist.github.com) or mention a gist from someone else without have to copy it, it could help. When building again your Publish website (when adding a new post for example), the embedded gists will also be refreshed automatically with potential updates of code. It's also possible to embed the gist thanks to a `<script>` HTML entity but it's less flexible for rendering, theming etc.
 
 ## 📦 Installation
 
@@ -112,7 +114,7 @@ In the `Resources` directory of your Publish project, we can create a subfolder 
 
 <img src="Images/resources.png" max-width="90%" alt="Resources" />
 
-For the `Theme`, same thing, we can create a copy of the `Theme+Foundation` (`Publish/Sources/Publish/API/Theme+Foundation.swift`) in a `Theme+MyTheme.swift` file and just add these naming updates:
+For the `Theme`, we can create a copy of the `Theme+Foundation` (`Publish/Sources/Publish/API/Theme+Foundation.swift`) in a `Theme+MyTheme.swift` file, just `import Publish` and add these naming updates:
 
 ```swift
 import Publish
@@ -162,3 +164,13 @@ try GistPublishPluginTests().publish(withTheme: .myTheme,
 Let's reload again and ... voilà !
 
 <img src="Images/after.png" max-width="90%" alt="After style" />
+
+## 🛠 Demo
+
+A [Publish Demo](https://github.com/thomaslupo/GistPublishPluginTests) project is available to test the integration of the GistPublishPlugin.
+
+## 🙏🏼 Source of inspiration
+
+The [TwitterPublishPlugin](https://github.com/insidegui/TwitterPublishPlugin) was a great source of inspiration for fetching gist from the GitHub API (like the fetch of a Tweet in the TwitterPublishPlugin), rendering it and so on.
+
+The [Splash Swift package](https://github.com/JohnSundell/Splash) and the [Splash Publish Plugin](https://github.com/JohnSundell/SplashPublishPlugin) were very helpful too.
