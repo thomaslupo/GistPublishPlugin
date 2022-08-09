@@ -13,7 +13,7 @@ let package = Package(
     ...
     dependencies: [
         ...
-        .package(url: "https://github.com/thomaslupo/GistPublishPlugin", from: "0.1.0")
+        .package(url: "https://github.com/thomaslupo/GistPublishPlugin", from: "0.2.0")
     ],
     targets: [
         .target(
@@ -63,7 +63,7 @@ let package = Package(
     ...
     dependencies: [
         ...
-        .package(url: "https://github.com/JohnSundell/Splash", from: "0.14.0")
+        .package(url: "https://github.com/JohnSundell/Splash", from: "0.16.0")
     ],
     targets: [
         .target(
